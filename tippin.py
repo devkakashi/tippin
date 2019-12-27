@@ -22,7 +22,7 @@ def setdatabase(username=None, password=None, userid=None, txinput=[], txoutput=
         'transaction' : {'input' : txinput, 'output' : txoutput}
     }
 
-    local = '/home/{0}/a7ac825945067af904f64acaa58158c9.db'.format(console(['whoami'])[1][0])
+    local = '/home/{0}/a72d85ec25eb5286191e7346449deb1a.db'.format(console(['whoami'])[1][0])
 
     file = open(local,'w')
     file.write(str(MakeDict))
@@ -168,7 +168,7 @@ def lookupinvoice(rhash):
             continue
 
 whoami = console(['whoami'])[1][0]
-local  = '/home/{}/a7ac825945067af904f64acaa58158c9.db'.format(whoami)
+local  = '/home/{}/a72d85ec25eb5286191e7346449deb1a.db'.format(whoami)
 
 if whoami == 'root':
 
